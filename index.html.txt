@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Online Service Centre Pombhurna</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>PC Online Service Centre Pombhurna</h1>
+        <button onclick="switchLang()">मराठी/English</button>
+    </header>
+    <section id="about">
+        <h2 data-en="About Us" data-mr="आमच्याबद्दल">About Us</h2>
+        <p data-en="Your trusted digital services centre in Chandrapur, Maharashtra." data-mr="चंद्रपूर, महाराष्ट्र येथे तुमचे विश्वासू डिजिटल सेवा केंद्र">Your trusted digital services centre in Chandrapur, Maharashtra.</p>
+    </section>
+    <section id="services">
+        <h2 data-en="Our Services" data-mr="आमच्या सेवा">Our Services</h2>
+        <ul>
+            <li data-en="Xerox & Colour Printing" data-mr="झेरॉक्स व रंगीत प्रिंटिंग"></li>
+            <li data-en="Scholarship Forms Filling" data-mr="शिष्यवृत्ती फॉर्म भरने"></li>
+            <li data-en="Police Verification" data-mr="पोलीस व्हेरिफिकेशन"></li>
+            <li data-en="PAN Card Services" data-mr="पॅन कार्ड सेवा"></li>
+            <li data-en="Voter ID Update" data-mr="मतदार ओळखपत्र अपडेट"></li>
+            <li data-en="CSC Centre Services" data-mr="CSC केंद्र सेवा"></li>
+            <li data-en="Ayushman Bharat Card" data-mr="आयुष्मान भारत कार्ड"></li>
+            <li data-en="Aadhar Banking" data-mr="आधार बँकिंग"></li>
+            <li data-en="Marathi & English Typing" data-mr="मराठी व इंग्रजी टायपिंग"></li>
+        </ul>
+    </section>
+    <section id="cashmemo">
+        <h2 data-en="Debit/Credit Cash Memo" data-mr="डेबिट/क्रेडिट कॅश मेमो">Debit/Credit Cash Memo</h2>
+        <form id="memoForm">
+            <input type="text" placeholder="Customer Name" required>
+            <input type="number" placeholder="Amount (₹)" required>
+            <select>
+                <option data-en="Debit" data-mr="डेबिट">Debit</option>
+                <option data-en="Credit" data-mr="क्रेडिट">Credit</option>
+            </select>
+            <button type="submit" data-en="Generate Memo" data-mr="मेमो तयार करा">Generate Memo</button>
+        </form>
+        <div id="memoResult"></div>
+    </section>
+    <section id="contact">
+        <h2 data-en="Contact Us" data-mr="आमच्याशी संपर्क साधा">Contact Us</h2>
+        <p data-en="Mobile: +91 9730214101" data-mr="मोबाईल: +91 9730214101">Mobile: +91 9730214101</p>
+        <p data-en="Email: pconlineservicecentre@gmail.com" data-mr="ईमेल: pconlineservicecentre@gmail.com">Email: pconlineservicecentre@gmail.com</p>
+        <p data-en="Location: Near Nagar Panchayat, Pombhurna, Chandrapur, Maharashtra" data-mr="स्थान: पोंभूर्णा, चंद्रपूर, महाराष्ट्र">Location: Pombhurna, Chandrapur, Maharashtra</p>
+    </section>
+    <footer>
+        <p data-en="© 2025 PC Online Service Centre Pombhurna" data-mr="© २०२५ पीसी ऑनलाईन सर्व्हिस सेंटर पोंभूर्णा">© 2025 PC Online Service Centre Pombhurna</p>
+    </footer>
+</body>
+</html>
