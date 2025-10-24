@@ -1,0 +1,24 @@
+function switchLang() {
+    const lang = document.body.getAttribute('data-lang') === 'mr' ? 'en' : 'mr';
+    document.body.setAttribute('data-lang', lang);
+
+    document.querySelectorAll('[data-en][data-mr]').forEach(el => {
+        el.textContent = lang === 'mr' ? el.getAttribute('data-mr') : el.getAttribute('data-en');
+    });
+}
+
+document.body.setAttribute('data-lang', 'en');
+
+document.querySelectorAll('[data-en][data-mr]').forEach(el => {
+    el.textContent = el.getAttribute('data-en');
+});
+
+// Cash Memo Functionality
+document.getElementById('memoForm').onsubmit = function(e) {
+    e.preventDefault();
+    const name = this.querySelector('input[type="text"]').value;
+    const amt = this.querySelector('input[type="number"]').value;
+    const type = this.querySelector('select').value;
+    const memoDiv = document.getElementById('memoResult');
+    memoDiv.textContent = `Memo for ${name}: ₹${amt} (${type})`;
+};
